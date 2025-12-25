@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win a $100 Lululemon Gift Card - Limited Time Offer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2D3748;
+            --primary-dark: #1A202C;
+            --secondary: #4ECDC4;
+            --accent: #FF6B6B;
+            --accent-alt: #FFA726;
+            --light-bg: #F8FAFC;
+            --white: #FFFFFF;
+            --text: #2D3748;
+            --text-light: #718096;
+            --border: #E2E8F0;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 30px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Particle Background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        /* Gradient Mesh Background */
+        .gradient-mesh {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            opacity: 0.7;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(78, 205, 196, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 107, 107, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(255, 167, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 20%, rgba(45, 55, 72, 0.08) 0%, transparent 50%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Header */
+        header {
+            padding: 25px 0;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 32px;
+            color: var(--accent);
+            background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 2px 4px rgba(255, 107, 107, 0.3));
+        }
+        
+        .brand-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+        
+        .brand-logo span {
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .header-tag {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent-alt));
+            color: white;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: var(--shadow-md);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-lg);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.8rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Countdown Timer */
+        .countdown-container {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            max-width: 550px;
+            margin: 40px auto 50px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .countdown-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary), var(--accent-alt));
+        }
+        
+        .countdown-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            text-align: center;
+        }
+        
+        .countdown-item {
+            flex: 1;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 20px 10px;
+            border-radius: var(--radius);
+            min-width: 90px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .countdown-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+        }
+        
+        .countdown-value {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+            color: white;
+            padding: 22px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: var(--radius);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.5s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        /* Trust Section */
+        .trust-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin: 60px 0;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--white);
+            padding: 20px 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            min-width: 220px;
+            transition: transform 0.3s ease;
+        }
+        
+        .trust-badge:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .trust-badge i {
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Steps Section */
+        .steps-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+            position: relative;
+            margin-top: 60px;
+        }
+        
+        .steps-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e2e8f0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
+            border-radius: 2px;
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 280px;
+            max-width: 320px;
+            padding: 40px 30px;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            text-align: center;
+            transition: transform 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step:hover {
+            transform: translateY(-15px) scale(1.02);
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent-alt));
+            color: white;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(78, 205, 196, 0.3);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .step p {
+            color: var(--text-light);
+        }
+        
+        .step-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .step-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(45, 55, 72, 0.2);
+        }
+        
+        /* Participants Section */
+        .participants-section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .participants-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+        
+        .highlight {
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .profiles-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .profile-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 25px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+        
+        .profile-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-name {
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        
+        .profile-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .profile-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(78, 205, 196, 0.1);
+            color: var(--secondary);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        /* Testimonials */
+        .testimonials-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .testimonial-card::before {
+            content: "\201C";
+            font-size: 6rem;
+            color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-family: serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+        }
+        
+        .testimonial-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .testimonial-location {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--light-bg), var(--white));
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .footer-text {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .profiles-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .countdown {
+                gap: 10px;
+            }
+            
+            .countdown-item {
+                min-width: 70px;
+                padding: 15px 5px;
+            }
+            
+            .countdown-value {
+                font-size: 1.8rem;
+            }
+            
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .step {
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+                padding: 12px 5px;
+            }
+            
+            .countdown-value {
+                font-size: 1.5rem;
+            }
+            
+            .cta-button {
+                padding: 18px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="gradient-mesh"></div>
+    <div id="particles-js"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-gift logo-icon"></i>
+                    <div class="brand-logo">LULULEMON <span>GIFT CARD</span></div>
+                </div>
+                <div class="header-tag">
+                    <i class="fas fa-star"></i>
+                    LIMITED TIME OFFER
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    EXCLUSIVE OFFER
+                </div>
+                
+                <h1 class="hero-title">Win a $100 Lululemon Gift Card</h1>
+                
+                <p class="hero-subtitle">Enter now for your chance to claim your reward. No purchase required. Available for U.S. residents only.</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <div class="countdown-title">⏰ Offer ends soon! Don't miss out</div>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="hours">12</div>
+                            <div class="countdown-label">HOURS</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="minutes">45</div>
+                            <div class="countdown-label">MINUTES</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="seconds">30</div>
+                            <div class="countdown-label">SECONDS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main CTA Button -->
+                <a href="https://smrturl.co/a/s4528c21a35/15720?s1=" class="cta-button" id="main-cta" target="_blank">
+                    <i class="fas fa-gift"></i>
+                    Claim My Gift Card
+                </a>
+                
+                <!-- Trust Elements -->
+                <div class="trust-section">
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Secure & Safe</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-lock"></i>
+                        <span>SSL Encrypted</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified Offer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <div class="container">
+            <h2 class="section-title">How To Claim Your Gift Card</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Enter Your Details</h3>
+                    <p>Provide your email address and ZIP code to begin the process.</p>
+                    <a href="https://smrturl.co/a/s4528c21a35/15720?s1=" class="step-button" target="_blank">
+                        <i class="fas fa-user-edit"></i>
+                        Start Here
+                    </a>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Complete Quick Survey</h3>
+                    <p>Answer a few simple questions to confirm your eligibility.</p>
+                    <a href="https://smrturl.co/a/s4528c21a35/15720?s1=" class="step-button" target="_blank">
+                        <i class="fas fa-clipboard-check"></i>
+                        Continue
+                    </a>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Your Gift Card</h3>
+                    <p>If selected, you'll receive your $100 Lululemon gift card via email.</p>
+                    <a href="https://smrturl.co/a/s4528c21a35/15720?s1=" class="step-button" target="_blank">
+                        <i class="fas fa-trophy"></i>
+                        Claim Reward
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participants Section -->
+    <section class="participants-section">
+        <div class="container">
+            <h2 class="section-title">Recent Participants</h2>
+            
+            <p class="participants-intro">Over <span class="highlight">2 million people</span> across the U.S. have participated in this offer. Here are some of our recent participants:</p>
+            
+            <div class="profiles-container">
+                <!-- Male Participants (6) -->
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson" class="profile-avatar">
+                    <div class="profile-name">James Wilson</div>
+                    <div class="profile-location">Houston, TX</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Michael Brown" class="profile-avatar">
+                    <div class="profile-name">Michael Brown</div>
+                    <div class="profile-location">Phoenix, AZ</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="David Martinez" class="profile-avatar">
+                    <div class="profile-name">David Martinez</div>
+                    <div class="profile-location">San Diego, CA</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Robert Taylor" class="profile-avatar">
+                    <div class="profile-name">Robert Taylor</div>
+                    <div class="profile-location">Miami, FL</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="William Anderson" class="profile-avatar">
+                    <div class="profile-name">William Anderson</div>
+                    <div class="profile-location">Seattle, WA</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/men/87.jpg" alt="Christopher Thomas" class="profile-avatar">
+                    <div class="profile-name">Christopher Thomas</div>
+                    <div class="profile-location">Denver, CO</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <!-- Female Participants (4) -->
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jennifer Lee" class="profile-avatar">
+                    <div class="profile-name">Jennifer Lee</div>
+                    <div class="profile-location">Chicago, IL</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sarah Johnson" class="profile-avatar">
+                    <div class="profile-name">Sarah Johnson</div>
+                    <div class="profile-location">Atlanta, GA</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Jessica Garcia" class="profile-avatar">
+                    <div class="profile-name">Jessica Garcia</div>
+                    <div class="profile-location">Dallas, TX</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Amanda Rodriguez" class="profile-avatar">
+                    <div class="profile-name">Amanda Rodriguez</div>
+                    <div class="profile-location">Boston, MA</div>
+                    <div class="profile-status">
+                        <i class="fas fa-check-circle"></i>
+                        Participated
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Recent Winners</h2>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">"I never thought I'd actually win! Got my $100 Lululemon gift card within 3 days. So excited to shop for new workout gear! The process was simple and secure."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D." class="testimonial-avatar">
+                    <div>
+                        <div class="testimonial-name">John D.</div>
+                        <div class="testimonial-location">from Texas - Just won $100 gift card</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title">Don't Miss This Opportunity!</h2>
+            <p style="max-width: 700px; margin: 0 auto 40px; font-size: 1.2rem; color: var(--text-light);">
+                Join over 2 million Americans who have already participated. Your chance to win a $100 Lululemon gift card is just a click away!
+            </p>
+            
+            <a href="https://smrturl.co/a/s4528c21a35/15720?s1=" class="cta-button" target="_blank">
+                <i class="fas fa-gift"></i>
+                Claim My Gift Card Now
+            </a>
+            
+            <div class="trust-section" style="margin-top: 50px;">
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield"></i>
+                    <span>Privacy Protected</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Instant Entry</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Guaranteed Winners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-text">
+                    <p>This is an independent promotional page. Participation is optional and subject to terms. This promotion is open to U.S. residents 18 years or older. No purchase required. Winners are selected at random. Gift card availability subject to change.</p>
+                    <p style="margin-top: 20px;">This promotion is not sponsored, endorsed, or administered by Lululemon. Lululemon is a registered trademark of its respective owner.</p>
+                    <p style="margin-top: 20px;">© 2023 GiftRewards. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        // Initialize Particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: ["#FF6B6B", "#4ECDC4", "#FFA726", "#2D3748"] },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.3, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: { 
+                        enable: true, 
+                        distance: 150, 
+                        color: "#4ECDC4", 
+                        opacity: 0.1, 
+                        width: 1 
+                    },
+                    move: { enable: true, speed: 2, direction: "none", random: true }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" }
+                    }
+                },
+                retina_detect: true
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+            
+            // Set the countdown time (12 hours from now)
+            const countDownDate = new Date().getTime() + (12 * 60 * 60 * 1000);
+            
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+                
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                hoursElement.innerHTML = hours.toString().padStart(2, '0');
+                minutesElement.innerHTML = minutes.toString().padStart(2, '0');
+                secondsElement.innerHTML = seconds.toString().padStart(2, '0');
+                
+                if (distance < 0) {
+                    clearInterval(x);
+                    hoursElement.innerHTML = "00";
+                    minutesElement.innerHTML = "00";
+                    secondsElement.innerHTML = "00";
+                }
+            }, 1000);
+        }
+
+        // সরাসরি রিডাইরেক্ট - কোন লোডিং মেসেজ ছাড়া
+        document.querySelectorAll('a[href*="smrturl.co"]').forEach(button => {
+            // কোন ইভেন্ট লিসেনার নেই - সরাসরি লিংক কাজ করবে
+            // শুধু টার্গেট="_blank" যোগ করা আছে যাতে নতুন ট্যাবে ওপেন হয়
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.step, .profile-card, .trust-badge').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+
+        // Initialize countdown timer
+        updateCountdown();
+    </script>
+</body>
+</html>
